@@ -1,10 +1,10 @@
 /*
-file name:ThreeSum.java 
+file name:Three Sum add to zero
 CreatedBy:Praveen T
 CreatedDate:10/10/16
 Purpose:A program with cubic running time. Read in N integers and counts the   number of triples that sum to exactly 0.
 */
-//package com.bridgelabz.java;
+
 import java.io.*;
 import java.lang.*;
 

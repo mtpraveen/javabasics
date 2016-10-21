@@ -1,10 +1,10 @@
 /*
-file name:BubbleSort.java
+file name:BubbleSort
 CreatedBy:Praveen T
 CreatedDate:08/10/16
 Purpose:Compare adjacent elements and swap them
 */
-//package com.bridgelabz.java;
+
 import java.util.*;
 public class BubbleSort
 {

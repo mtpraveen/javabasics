@@ -1,14 +1,14 @@
 /*
-file name:StcokReport.java
+file name:StcokReport
 CreatedBy:Praveen T
 CreatedDate:12/10/16
 Purpose:Write a program to read in Stock Names, Number of Share, Share Price. Print a Stock Report with total value of each Stock and the total value of Stock.
 */
 
-//package com.bridgelabz.java;
+
 public class StockReport {
-		int number;
-		double allTotal = 0;
+		int mNumber;
+		double mAllTotal = 0;
 		
 		Utility u = new Utility();
 		String name[] = new String[100];
@@ -17,9 +17,9 @@ public class StockReport {
 		double total[] = new double[100];
 		
 		//for entry of stock details
-		public void entry(int number){
-			this.number = number;
-			for(int i=0;i<number;i++){
+		public void entry(int mNumber){
+			this.mNumber = mNumber;
+			for(int i=0;i<mNumber;i++){
 				System.out.println("\nPlease Enter Details for Stock: "+(i+1));
 				System.out.println("Name:");
 				name[i] = u.inputString();
@@ -33,7 +33,7 @@ public class StockReport {
 
 		//calculating total of each stack
 		public void calculate(){
-			for(int i=0;i<number;i++){
+			for(int i=0;i<mNumber;i++){
 				total[i] = share[i]*value[i];
 				System.out.println("Total value for Stock "+(i+1)+" is: "+total[i]+" Rs.");
 			}
@@ -41,10 +41,10 @@ public class StockReport {
 
 		//Calculating total share
 		public void totalval(){
-			for(int i=0;i<number;i++){
-				allTotal = allTotal+total[i];
+			for(int i=0;i<mNumber;i++){
+				mAllTotal = mAllTotal+total[i];
 			}
-			System.out.println("\nTotal value of all "+number+" Stock is: "+allTotal+" Rs.");
+			System.out.println("\nTotal value of all "+mNumber+" Stock is: "+mAllTotal+" Rs.");
 		}
 
 

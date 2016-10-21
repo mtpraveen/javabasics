@@ -1,10 +1,10 @@
 /*
-file name:LeapYear.java
+file name:LeapYear
 CreatedBy:Praveen T
 CreatedDate:8/10/16
 Purpose:LeapYear
 */
-//package com.bridgelabz.java;
+
 import java.io.*;
 import java.util.Scanner;
 

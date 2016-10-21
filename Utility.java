@@ -4,8 +4,9 @@
 *@Date: 12/10/2016
 *@purpose: Utility class for data input and common code.
 */
-//package com.bridgelabz.java;
 import java.io.*;
+
+import java.util.Scanner;
 
 
 public class Utility{
@@ -274,7 +275,9 @@ public class Utility{
 		if(count == 0)
 			System.out.println("Search not found");	
 
-	}	
+	}
+
+	
 }
 
 

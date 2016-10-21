@@ -1,10 +1,9 @@
 /*
-file name:Anagram.java
+file name:Anagram
 CreatedBy:Praveen T
 CreatedDate:10/10/16
 Purpose:One string is an anagram of another
 */
-//package com.bridgelabz.java;
 import java.util.Scanner;
 
 public class Anagram {

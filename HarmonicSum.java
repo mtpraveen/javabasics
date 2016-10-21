@@ -4,7 +4,6 @@ CreatedBy:Praveen T
 CreatedDate:8/10/16
 Purpose:Prints sum of harmonic number: 1/1 + 1/2 + ... + 1/N 
 */
-//package com.bridgelabz.java;
 import java.io.*;
 import java.util.Scanner;
 class HarmonicSum

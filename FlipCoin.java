@@ -1,19 +1,19 @@
 /*
-file name:FlipCoin.java
+file name:FlipCoin
 CreatedBy:Praveen T
 CreatedDate:8/10/16
 Purpose:2. Flip Coin and print percentage of Heads and Tails
 */
-//package com.bridgelabz.java;
+
 import java.util.*;
 
 public class FlipCoin {
    public static void main( String args[] ){
-	int head=0;
+	int mHead=0;
 	int tail=0;
 	int number=0;
-	float headpercent;
-	float tailpercent;
+	float mHeadpercent;
+	float mTailpercent;
 
    Random r = new Random();
    Scanner scn = new Scanner(System.in);
@@ -25,14 +25,14 @@ public class FlipCoin {
 	if(rand<0.5)
 	{
 	tail++;
-	tailpercent=(tail/n)*100;
-	System.out.println(tailpercent);
+	mTailpercent=(tail/n)*100;
+	System.out.println(mTailpercent);
 	}
 	else
 	{
-	head++;
-	headpercent=(head/n)*100;
-	System.out.println(headpercent);
+	mHead++;
+	mHeadpercent=(mHead/n)*100;
+	System.out.println(mHeadpercent);
 	}
    }    
 }

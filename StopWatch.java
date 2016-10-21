@@ -1,53 +1,53 @@
 /*
-file name:StopWatch.java
+file name:StopWatch
 CreatedBy:Praveen T
 CreatedDate:8/10/16
 Purpose:interval time between the start and end clicks
 */
-//package com.bridgelabz.java;
+
 public class StopWatch {
 
-	private long startTime = 0;
-	private long stopTime = 0;
-	private boolean running = false;
+private long mStartTime = 0;
+private long mStopTime = 0;
+private boolean mRunning = false;
 
 
-	public void start() {
-    	this.startTime = System.currentTimeMillis();
-    	this.running = true;
-	}
+public void start() {
+    this.mStartTime = System.currentTimeMillis();
+    this.mRunning = true;
+}
 
 
-	public void stop() {
-    	this.stopTime = System.currentTimeMillis();
-    	this.running = false;
-	}
+public void stop() {
+    this.mStopTime = System.currentTimeMillis();
+    this.mRunning = false;
+}
 
 
-	//elaspsed time in milliseconds
-	public long getElapsedTime() {
-    	long elapsed;
-    	if (running) {
-        elapsed = (System.currentTimeMillis() - startTime);
-   	 }
-    	else {
-        elapsed = (stopTime - startTime);
-   	}
-   	return elapsed;
-	}
+//elaspsed time in milliseconds
+public long getElapsedTime() {
+    long elapsed;
+    if (mRunning) {
+         elapsed = (System.currentTimeMillis() - mStartTime);
+    }
+    else {
+        elapsed = (mStopTime - mStartTime);
+    }
+    return elapsed;
+}
 
 
-	//elaspsed time in seconds
-	public long getElapsedTimeSecs() {
-        long elapsed;
-        if (running) {
-        elapsed = ((System.currentTimeMillis() - startTime) / 1000);
-       	}
-        else {
-        elapsed = ((stopTime - startTime) / 1000);
-  	}
-   	return elapsed;
-	}
+//elaspsed time in seconds
+public long getElapsedTimeSecs() {
+    long elapsed;
+    if (mRunning) {
+        elapsed = ((System.currentTimeMillis() - mStartTime) / 1000);
+    }
+    else {
+        elapsed = ((mStopTime - mStartTime) / 1000);
+    }
+    return elapsed;
+}
 
 
 

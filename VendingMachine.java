@@ -1,13 +1,12 @@
 /*
 file name:VendingMachine.java
 CreatedBy:Praveen T
-CreatedDate:13/10/16
-purpose: Fewest Notes to be returned for Vending Machine
+CreatedDate:12/10/16
+purpose: minimum Note needed to give the change and second list of Rs Notes that would given in the Change
 */
-//package com.bridgelabz.java;
 import java.util.*;
 public class VendingMachine{
-	static int total = 0;
+	static int mTotal = 0;
 	
 	//recursive function
 	static void function(int value){
@@ -15,49 +14,49 @@ public class VendingMachine{
 		if(value >= 1000){
 			value = value-1000;
 			System.out.print("1000 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if(value >= 500){
 			value = value-500;
 			System.out.print("500 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if(value >= 100){
 			value = value-100;
 			System.out.print("100 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if (value >=50){
 			value = value-50;
 			System.out.print("50 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if(value >= 10){
 			value = value-10;
 			System.out.print("10 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if(value >= 5){
 			value = value-5;
 			System.out.print("5 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if(value >= 2){
 			value = value-2;
 			System.out.print("2 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 		else if(value >= 1){
 			value = value-1;
 			System.out.print("1 ");
-			total++;
+			mTotal++;
 			function(value);
 		}
 	}
@@ -73,7 +72,7 @@ public class VendingMachine{
 			function(value);
 		else
 			System.out.println("No Change");
-		System.out.println("\nTotal No. of notes: "+total);
+		System.out.println("\nTotal No. of notes: "+mTotal);
 		
 	}
 }

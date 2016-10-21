@@ -4,7 +4,6 @@ CreatedBy:Praveen T
 CreatedDate:8/10/16
 Purpose:Take User Input and Replace UserName
 */
-//package com.bridgelabz.java;
 import java.io.*;
 import java.util.Scanner;
  

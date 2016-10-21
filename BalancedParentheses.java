@@ -1,10 +1,3 @@
-/*
-file name:BalancedParentheses.java
-CreatedBy:Praveen T
-CreatedDate:14/10/16
-purpose:Balancing Arithmetic Expression 
-*/
-//package com.bridgelabz.java;
 import java.util.*;
 
 class BalancedParentheses{

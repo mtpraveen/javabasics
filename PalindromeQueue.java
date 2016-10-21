@@ -4,7 +4,6 @@ CreatedBy:Praveen T
 CreatedDate:14/10/16
 purpose:Palindrome
 */
-//package com.bridgelabz.java;
 import java.util.*;
 
 

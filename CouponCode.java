@@ -1,28 +1,28 @@
 /*
-file name:CouponCode.java
+file name:CouponCode
 CreatedBy:Praveen T
 CreatedDate:12/10/16
 purpose: Coupon Code generator program
 */
 
-//package com.bridgelabz.java;
+
 import java.util.*;
 
  class CouponCode{
-	void randomgen(int num){
+	void randomNo(int num){
 		Random r = new Random();
-		for(int i=1;i<=n;i++){
-			System.out.println(r.nextInt(50));
+		for(int i=1;i<=num;i++){
+			System.out.println(r.nextInt(100));
 		}
 	}
 
 	public static void main(String[] args){
-		int n;
+		int num;
 	
 		CouponCode c = new CouponCode();
 		Scanner scn = new Scanner(System.in);
-		System.out.println(" Enter the number of random numbers you want");
-		n = scn.nextInt();
-		c.randomgen(num);		
+		System.out.println("Please Enter the number of random numbers you want");
+		num = scn.nextInt();
+		c.randomNo(num);		
 	}
 }
